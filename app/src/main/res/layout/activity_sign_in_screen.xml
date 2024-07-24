@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/MyColor"
+    tools:context=".signIn_screen">
+
+    <EditText
+        android:id="@+id/email_signIn_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter emil"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_edit_text_view"
+        />
+    <EditText
+        android:id="@+id/password_sihnIn_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_edit_text_view"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signIn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_button"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DO NOT HAVE ACCOUNT ?"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/goToSignUP_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>
